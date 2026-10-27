@@ -36,6 +36,7 @@ export function useFetchPhotos() {
             }
           })
         )
+        
         const data = await Promise.all(requests)
         if (!cancelled) {
           setPhotos(data)
